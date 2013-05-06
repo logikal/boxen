@@ -1,4 +1,8 @@
 class people::logikal {
+
+  $home = "/Users/logikal"
+  $dotfiles = "${home}/.dotfiles"
+
   include homebrew
   include zsh
   include sparrow
@@ -18,4 +22,7 @@ class people::logikal {
   include sublime_text_2
   include chrome
 
+  repository { $dotfiles:
+    source  => 'logikal/.dotfiles'
+  }
 }

@@ -1,6 +1,6 @@
 class people::logikal {
 
-  $home = "/Users/logikal"
+  $home = "/Users/seankilgore"
   $dotfiles = "${home}/.dotfiles"
 
   include homebrew
